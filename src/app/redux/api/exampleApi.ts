@@ -1,7 +1,7 @@
 import { routes } from "../apiRoutes";
 import { api } from "./apiSlice";
 
-const exampleApi = api.injectEndpoints({
+export const exampleApi = api.injectEndpoints({
   endpoints: (builder) => ({
     getProducts: builder.query({
       query: ({ id, token }) => ({
