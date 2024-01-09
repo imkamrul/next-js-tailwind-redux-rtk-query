@@ -1,3 +1,5 @@
+import LogoIcon from "../Icons/LogoIcon";
+
 interface SidebarProps {
   sidebarOpen?: boolean;
   setSidebarOpen?: (arg: boolean) => void;
@@ -6,22 +8,23 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <>
       <aside
-        className={`h-screen w-[250px] flex-col overflow-y-hidden bg-black text-white`}
+        className={`h-screen w-[250px] flex-col overflow-y-hidden  bg-[#F6F6F9]`}
       >
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis,
-          eligendi odit! Fugiat eaque laudantium maxime. Ipsa rerum corrupti in
-          totam veritatis reprehenderit quae fugiat, sit quaerat sint
-          voluptatibus facilis provident quas distinctio porro inventore commodi
-          voluptas enim eligendi aut maxime qui autem quisquam? Illum sint
-          mollitia deleniti eligendi qui ducimus unde ex similique aliquid
-          quisquam natus totam sed beatae doloribus quos quasi tempora quaerat
-          ad voluptatibus, repellat voluptatem nisi commodi. Pariatur nihil
-          inventore earum rerum, officia exercitationem praesentium? Fuga rerum
-          enim quia atque optio eos consequatur labore velit totam, modi maxime
-          voluptatibus impedit placeat nam ut accusamus aspernatur distinctio
-          iusto.
-        </p>
+        <div className="bg-[#665BFF] w-full h-[57px] flex items-center gap-x-3 pl-4">
+          <LogoIcon /> <p className="text-xl font-semibold text-white">CRM</p>
+        </div>
+        <div className="px-3.5">
+          <div className="flex flex-col gap-y-2 mt-4">
+            <p className="text-[#665BFF] text-sm font-semibold">Dashboard</p>
+            <p className="text-[#665BFF] text-sm font-semibold">Customers</p>
+            <p className="text-[#665BFF] text-sm font-semibold">Invoices</p>
+            <p className="text-[#665BFF] text-sm font-semibold">Estimates</p>
+            <p className="text-[#665BFF] text-sm font-semibold">Payments</p>
+            <p className="text-[#665BFF] text-sm font-semibold">Expenses</p>
+            <p className="text-[#665BFF] text-sm font-semibold">Reports</p>
+            <p className="text-[#665BFF] text-sm font-semibold">Settings</p>
+          </div>
+        </div>
       </aside>
     </>
   );
