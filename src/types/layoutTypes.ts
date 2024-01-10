@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
 
-interface SidebarItem {
+export interface SidebarItem {
   name: string;
   path: string;
-  icon: ReactNode;
+  icon?: ReactNode;
   sabMenu?: boolean;
   list?: SidebarItem[];
+  pageList?: string[];
 }
 
 // Define the type for the entire list

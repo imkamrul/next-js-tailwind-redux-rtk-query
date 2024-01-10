@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+}
+@layer components {
+  .active-side-nav svg,
+  .active-side-nav svg path {
+    stroke: #665bff !important;
+  }
+}
+
+@layer utilities {
+}

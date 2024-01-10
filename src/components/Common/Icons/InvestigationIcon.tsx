@@ -10,7 +10,8 @@ const InvestigationIcon = () => {
       >
         <path
           d="M13.5 15V7.5M9 15V3M4.5 15V10.5"
-          stroke="#667085"
+          // stroke="#667085"
+          className="stroke-[#344054] group-hover:stroke-[#665BFF]"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"

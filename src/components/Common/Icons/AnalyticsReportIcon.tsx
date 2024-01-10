@@ -11,7 +11,8 @@ const AnalyticsReport = () => {
         <g clipPath="url(#clip0_504_3291)">
           <path
             d="M1.5 12.75L9 16.5L16.5 12.75M1.5 9L9 12.75L16.5 9M9 1.5L1.5 5.25L9 9L16.5 5.25L9 1.5Z"
-            stroke="#667085"
+            // stroke="#667085"
+            className="stroke-[#344054] group-hover:stroke-[#665BFF]"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

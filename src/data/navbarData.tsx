@@ -1,5 +1,6 @@
+import AnalyticsReportIcon from "@/components/Common/Icons/AnalyticsReportIcon";
 import CRIcon from "@/components/Common/Icons/CRIcon";
-import AnalyticsReportIcon from "@/components/Common/Icons/CexUpdateIcon";
+import CexUpdateIcon from "@/components/Common/Icons/CexUpdateIcon";
 import DashboardIcon from "@/components/Common/Icons/DashboardIcon";
 import EmailIcon from "@/components/Common/Icons/EmailIcon";
 import InvestigationIcon from "@/components/Common/Icons/InvestigationIcon";
@@ -27,23 +28,21 @@ export const SidebarList: SidebarListType = [
   {
     name: "CEx Account Updates",
     path: "#",
-    icon: "contact",
+    icon: <CexUpdateIcon />,
     sabMenu: true,
+    pageList: ["/test", "/test-2", "/test-3"],
     list: [
       {
-        name: "Dashboard",
-        path: "/dashboard",
-        icon: <DashboardIcon />,
+        name: "test",
+        path: "/test",
       },
       {
-        name: "Dashboard",
-        path: "/dashboard",
-        icon: <DashboardIcon />,
+        name: "test 2",
+        path: "/test-2",
       },
       {
-        name: "Dashboard",
-        path: "/dashboard",
-        icon: <DashboardIcon />,
+        name: "test 3",
+        path: "/test-3",
       },
     ],
   },
@@ -54,25 +53,23 @@ export const SidebarList: SidebarListType = [
     sabMenu: false,
   },
   {
-    name: "Email",
+    name: "Payout",
     path: "#",
     icon: <EmailIcon />,
     sabMenu: true,
+    pageList: ["/bdev-payouts", "/gdev-payouts", "/tdev-payouts"],
     list: [
       {
-        name: "Dashboard",
-        path: "/dashboard",
-        icon: <DashboardIcon />,
+        name: "BDev Payouts",
+        path: "/bdev-payouts",
       },
       {
-        name: "Dashboard",
-        path: "/dashboard",
-        icon: <DashboardIcon />,
+        name: "GDev Payouts",
+        path: "/gdev-payouts",
       },
       {
-        name: "Dashboard",
-        path: "/dashboard",
-        icon: <DashboardIcon />,
+        name: "TDev Payouts",
+        path: "/tdev-payouts",
       },
     ],
   },

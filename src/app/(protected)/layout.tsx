@@ -1,6 +1,7 @@
 "use client";
 import Header from "@/components/Common/Layout/Header";
 import Sidebar from "@/components/Common/Layout/Sidebar";
+import Loader from "@/components/Common/Sections/Loader";
 import { usePathname } from "next/navigation";
 import React from "react";
 
@@ -11,6 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   } = {
     "/dashboard": "Dashboard",
   };
+  const loading = false;
   return (
     <>
       <head>
@@ -23,7 +25,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <section className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden m-0">
             <Header />
-            <div className="mx-auto max-w-[1010px] py-5 w-full">{children}</div>
+            {loading ? (
+              <Loader />
+            ) : (
+              <div className="mx-auto max-w-[1010px] py-5 w-full">
+                {children}
+              </div>
+            )}
           </section>
         </main>
       </body>

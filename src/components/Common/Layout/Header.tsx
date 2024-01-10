@@ -1,6 +1,6 @@
 import DropdownNotification from "./DropDownNotification";
 import DropdownSetting from "./DropDownSetting";
-import DropdownUser from "./DropwornUser";
+import DropdownUser from "./DropdownUser";
 
 const Header = () => {
   return (
